@@ -1,0 +1,15 @@
+// select every p that shows up as the first child in any element
+p:first-child {
+  opacity: 0;
+}
+
+/*
+
+<p>works<p>
+<div>
+  <p>works</p>
+  <p></p>
+  <p></p>
+</div>
+
+*/

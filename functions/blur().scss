@@ -1,0 +1,9 @@
+/*
+  blur() applies a Gaussian blur to an input image. 
+  
+  Its result is a <filter-function>.
+*/
+
+p {
+  backdrop-filter: blur();
+}

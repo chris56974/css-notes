@@ -1,0 +1,10 @@
+/*
+  Adds shadows around an element. You can set multiple using commas.
+
+  blur-radius -> how blurry do you want the shadow? You use pixels here
+*/
+
+p {
+  box-shadow: offset-x offset-y blur-radius spread-radius color;
+  box-shadow: inset offset-x offset-y color; // casts the shadow
+}

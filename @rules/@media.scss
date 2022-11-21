@@ -1,0 +1,18 @@
+/*
+  @media will apply styles if its "media query" holds true  
+  They should be placed low for specificity reasons and you should limit their use. 
+  People recommend using em for your breakpoints.
+*/
+
+@media only All/screen/print/speech and (max-width: 1px) {} 
+All... // these are "media types" and is optional
+only   // used for old browsers so they skip your media query 
+,      // same thing as "or"
+
+@media (orientation: portrait) {}
+@media (resolution: 150dpi) {}
+// @media (prefers-color-scheme: dark) {}
+
+@media (min-width: 1em) {} // recommended you use em
+@media (max-width: 1em) {}
+@media (400px <= width <= 700px) {} // new

@@ -1,0 +1,21 @@
+// A "positioned" element, is anything that isn't static.
+
+p {
+  position: static; // default position "normal flow"
+  position: static; // elements are laid out according to their source order
+
+  position: relative; // relative elements are still in "normal flow"
+  position: relative; // except left, right, top, bottom, z-index now works!
+  position: relative; // they shift the element away from it's normal flow pos
+
+  position: absolute; // removes the element from "normal flow"
+  position: absolute; // other elements act like it disappeared
+  position: absolute; // left, etc. is based off the CLOSEST NON-STATIC parent
+  position: absolute; // you usually make the parent element relative
+
+  position: fixed; // same as absolute but left is relative to the document
+  position: fixed; // it is unaffected by scrolling (popular for navigation)
+
+  position: sticky; // behaves relative until a certain point (then fixed)
+  top: 20px; // fixed once the user scrolls 20px from the top
+}

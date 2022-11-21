@@ -1,0 +1,35 @@
+// You can trigger animations later using pseudo-selectors/JS. 
+// Only use transition, opacity, and transform: scale/rotate/translate (everything else requires a repaint). 
+// You can't translate across the z-axis lol.
+
+p {
+  animation: duration easing delay iteration direction fill-mode play-state name;
+  animation: 0s ease 0s 1 normal none running name; // defaults
+
+  animation: name duration timing-function delay;
+  animation: name duration;
+
+  // How it transitions through keyframes
+  animation-timing-function: ease;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+  animation-timing-function: step-start;
+  animation-timing-function: step-end;
+
+  // Whether it should alternate directions on each run or reset to the start point
+  animation-direction: normal; // default
+  animation-direction: reverse; // play it in reverse
+  animation-direction: alternate; // forward then reverse
+  animation-direction: alternate-reverse; // reverse then forward
+
+  // What values are applied by the animation before/after it's executing
+  animation-fill-mode: forwards; // end-state persists after its done
+  animation-fill-mode: backwards; // start-state persists during delay
+  animation-fill-mode: both; // both
+
+  // Lets you pause/resume the animation (like on :hover or :focus)
+  animation-play-state: running;
+  animation-play-state: paused;
+}

@@ -1,0 +1,21 @@
+/*
+  @page modifies different aspects of a printed page property (dimensions, page orientation, and margins).
+  It has its own pseudo classes
+*/
+
+/* Targets all the pages */
+@page {
+  size: 8.5in 9in;
+  margin-top: 4in;
+}
+
+/* Targets all even-numbered pages */
+@page :left {
+  margin-top: 4in;
+}
+
+/* Targets all odd-numbered pages */
+@page :right {
+  size: 11in;
+  margin-top: 4in;
+}

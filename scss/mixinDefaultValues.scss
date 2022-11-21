@@ -1,0 +1,13 @@
+@mixin example($w: 100%, $h: 100%) { 
+  width: $w; 
+  height: $h; 
+}
+
+h1 {
+  @include example(1px)
+}
+
+// compiles to this
+h1 {
+  width: 1px, height: 100%
+} 

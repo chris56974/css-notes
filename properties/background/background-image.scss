@@ -1,0 +1,9 @@
+// Use this when you don't want any text, no HTML5 semantics, no screen reader help.
+
+p {
+  background-image: url(img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 0px;
+  background-origin: border-box;
+}

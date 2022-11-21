@@ -1,0 +1,8 @@
+input ~ p {} // selects ALL SUBSEQUENT p elements after every input element
+
+/*
+<p>fails</p>
+<input/>
+<p>works</p>
+<p>works</p>
+*/

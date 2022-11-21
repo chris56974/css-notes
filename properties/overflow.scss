@@ -1,0 +1,13 @@
+/*
+  An overflow happens whenever the content of a block element is taller or wider than the block element itself
+  This only happens when you set a height or a width for a block element
+  This property will let you decide what you want to do whenever an element overflows
+  Any overflow that's not visible will create a "block formatting context"
+*/
+
+p {
+  overflow: hidden; // hide it
+  overflow: scroll; // scroll it
+  overflow: auto;
+  overflow: visible;
+}

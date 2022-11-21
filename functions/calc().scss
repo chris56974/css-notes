@@ -1,0 +1,5 @@
+// calculate a value using whatever arguments.
+
+p {
+  width: calc(100vw - 80px); // you can combine different units
+}

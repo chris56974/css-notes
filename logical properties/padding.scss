@@ -1,0 +1,18 @@
+/*
+  block axis  -> top and bottom
+  inline axis -> left and right
+  start       -> top/left
+  end         -> bottom/right
+*/
+
+p {
+  padding: 2px;
+
+  padding-block: 2px;
+  padding-block-end: 2px;
+  padding-block-start: 2px;
+
+  padding-inline: 2px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
+}

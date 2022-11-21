@@ -1,0 +1,16 @@
+// CSS vars are reusable values for different properties.
+// They're scoped, can't be cascaded and are targetable via JS.
+// They're not good for breakpoints, use SCSS vars instead.
+
+:root { // <html>
+	--my-variable: red;
+}
+
+p {
+	// blue is a default but it's only meant for when the css variable isn't defined yet
+	// so you might define it later with JS
+	color: var(--my-variable, blue); 
+}
+
+// you can inline the css var 
+// <div style="--my-variable: 5;" /> 

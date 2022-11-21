@@ -1,0 +1,16 @@
+// selects ALL divs AND paragraphs
+textarea,
+p {
+  opacity: 0;
+}
+
+/*
+
+<textarea>works</textarea>
+<p>works</p>
+<p> 
+  works
+  <p>works</p>
+</p> 
+
+*/

@@ -1,0 +1,9 @@
+// fix a value between two points
+
+p {
+  width: clamp(min, preferred, max);
+
+  width: clamp(200px, 50%, 600px);
+  width: clamp(45char, 50%, 75char); // optimal paragraph width
+  font-size: clamp(3.5rem, 3vw + 1rem, 9rem); // for large screens
+}

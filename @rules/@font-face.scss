@@ -1,0 +1,8 @@
+// Specifies a custom font. 
+
+@font-face {
+	font-family: Foo;        // can call it whatever you want
+	font-family: "Open Sans";
+	src: local("Open Sans"), // load a locally installed font
+       url("Open Sans") format("woff2")
+}

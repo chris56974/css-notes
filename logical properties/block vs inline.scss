@@ -1,0 +1,10 @@
+/*
+  Logical properties and values use the abstract terms "block" and "inline" to describe the direction in which they flow.
+  The physical meaning of these terms depends on the writing mode (ltr, rtl, etc).
+
+  Block dimension
+  The dimension perpendicular to the flow of text within a line, i.e., the vertical dimension in horizontal writing modes, and the horizontal dimension in vertical writing modes. For standard English text, it is the vertical dimension.
+
+  Inline dimension
+  The dimension parallel to the flow of text within a line, i.e., the horizontal dimension in horizontal writing modes, and the vertical dimension in vertical writing modes. For standard English text, it is the horizontal dimension.
+*/

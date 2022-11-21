@@ -1,0 +1,15 @@
+// the first p element from a group of siblings
+p:first-of-type {
+  width: 0;
+}
+
+/*
+<div>
+  <h1></h1>
+  <p>works</p>
+  <h2></h2>
+  <p>fails</p>
+</div>
+
+<p>works</p>
+*/

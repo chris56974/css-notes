@@ -1,0 +1,17 @@
+/*
+  text-overflow sets how hidden overflown content is shown to the user. 
+  It can be clipped, show an ellipsis ('…'), or display a custom string.
+
+  It doesn't force an overflow to occur, you still need... 
+
+  overflow: hidden;
+  white-space: nowrap;
+*/
+
+p {
+  overflow: hidden;
+
+  // These two things have to go on the same element
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

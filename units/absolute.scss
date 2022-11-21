@@ -1,0 +1,15 @@
+/* 
+  Absolute units aren't relative to anything
+
+  cm, mm, Q (quarter mm), in, pc, pt, px, ch
+
+  A px in CSS (reference pixel) is not the same thing as a pixel in real life
+  It depends on the user's device, if their screen resolution is 96 DPI then it will be 1-1
+  If they have 3x resolution, then it will scale the reference pixel by 3 physical pixels
+  It's the user-agent that does this
+
+  The px unit is good for stuff that should stay the same size at all screen sizes (the user can still pinch/scoll to zoom in).
+  stuff like hairline borders
+
+  pt, pc, cm, mm, in are for printing things.
+*/

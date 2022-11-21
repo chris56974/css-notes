@@ -1,0 +1,8 @@
+// The grid must be rectangular and not L shaped.
+
+.foo {
+  grid-template-areas:
+    "a b"
+    ". c" // . means 'empty grid cell'
+    "d e none"; // none means no grid area defined 
+}

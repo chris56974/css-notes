@@ -1,0 +1,17 @@
+// Transition
+
+p {
+  transition-property: opacity; // thing you want to transition
+  transition-duration: 2s; // the duration it should trandition
+  transition-timing-function: ease-in;
+  transition-delay: 2s;
+
+  transition: property duration;
+  transition: property duration delay;
+  transition: property duration timing-function;
+  transition: property duration timing-function delay,
+    property2 duration timing-function delay;
+
+  transition: visibility 0s 2s, opacity 2s linear;
+  transition: margin-right 2s linear 1s;
+}

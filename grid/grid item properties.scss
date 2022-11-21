@@ -1,0 +1,12 @@
+// grid item properties is where to place a grid item on grid lines
+p {
+  grid-column: grid-column-start / grid-column-end;
+  grid-row: grid-row-start / grid-row-end;
+  grid-column: 1 / 3;
+  grid-column: 1 / span 3;
+  grid-column: row1-start; // if you named your lines (single value = grid-col-start)
+
+  align-self: start/center/end/stretch; // align along the inline (row) axis
+  justify-self: start/center/end/stretch; // align along the block (column) axis
+  place-self: align-self justify-self; // Shorthand
+}

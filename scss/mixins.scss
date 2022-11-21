@@ -1,0 +1,13 @@
+// inject
+@mixin example {
+  width: 100%
+} 
+
+h1 {
+  @include example
+}
+
+// compiles to this
+h1 {
+  width: 100%
+} 

@@ -1,0 +1,28 @@
+/*
+  In order to figure out the size of the paragraph element, it starts by looking at the "declared values" 280px and 66%. 
+  They conflict, so CSS will check the cascade. 
+  The 66% wins and becomes the "cascaded value" because it's more specific than 280px. 
+  The cascaded value then becomes the "specified value", if there was no conflict it would immediately become the specified value.
+
+  Then we convert all relative length units (rem, em) into absolute pixels to get a "computed value". 
+  The 66% isn't a length unit so nothing changes. 
+  It then takes 66% of the parent element's width to get 184.8px or the USED VALUE. 
+  It then rounds up the used value to 185px to get the actual value since you can't have .8 of a pixel in real life.
+
+  <p class="eg">
+
+*/
+
+p {
+  width: 280px;
+}
+.eg {
+  width: 66%;
+}
+
+p {
+  margin-bottom: top, right, bottom, left; // clockwise
+  padding-bottom: -5px; // ERROR - padding can't have negative values
+  margin-bottom: -5px; // elements below move up 5px
+  margin-left: -5px; // p moves 5px left
+}

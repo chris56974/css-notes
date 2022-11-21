@@ -1,0 +1,25 @@
+// CSS "Cascading Style Sheets" describes how HTML elements should appear on the page. 
+// The browser won't download CSS files that aren't being used. 
+//  Margin/padding top/bottom has no effect on inline elements. Use firefox. Every CSS property (font-size, color, etc) gets a value even if you never set one (usually defaults to 0). Text properties are usually inherited by default to prevent boilerplate, whereas most dimensions are not inherited by default (padding, margin). HSL "Hue Saturation Lightness" is handy for creating multiple colors just by changing the lightness a bit. 
+
+*,
+*::after,  // eliminate margin/padding on pseudo selectors as well
+*::before {
+  margin: 0;           // use .5 instead of 0.5
+  pADdInG: 0;          // case insensitive, doesn't matter
+  box-sizing: inherit; // allows plugins to keep their own box sizing
+}
+
+body {
+  font-family: default, fall-back, fall-back2; // some browsers don't support all fonts
+  font-size: 62.5%;       // 16px x 0.625 = 10px (1 rem = 10px)
+  font-size: 15-25px;     // sweet spot (45-90 chars per line)
+  font-weight: 400;       // larger font sizes should have less font weight
+  line-height: 120-150%;  // sweet spot 
+  box-sizing: border-box; // sets the padding/margin to what we expect
+}
+
+.selector {   // {} is a declaration block
+  opacity: 0; // this is a declaration
+  
+}

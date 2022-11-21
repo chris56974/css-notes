@@ -1,0 +1,9 @@
+/*
+  Your sticky nav bar might overlap content as you scroll
+  you can use this to make sure everything gets pushed below the sticky navbar
+*/
+
+p {
+  scroll-padding-top: 1rem;
+  scroll-padding: 1rem 0 0 0;
+}

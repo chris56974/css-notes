@@ -1,0 +1,16 @@
+// select all DIRECT p's inside every div (not every nested p)
+div > p { 
+  opacity: 0;
+} 
+
+/*
+
+<div> 
+  <p>works</p>
+  <span>
+    <p>fails</p> 
+  </span>
+  <p>works</p>
+</div>
+
+*/

@@ -1,0 +1,17 @@
+%example {
+  padding: 10px;
+}
+
+.btn-a {
+  @extend %example;
+}
+
+.btn-b {
+  @extend %example;
+}
+
+// COMPILES TO THIS
+.btn-a,
+.btn-b {
+  padding: 10px;
+}

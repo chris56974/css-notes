@@ -1,0 +1,11 @@
+/*
+  backface-visibility sets whether or not the back face of an element is visible when turned towards the user.
+  It only works when the object is being represented in 3D space. It's GPU accelerated for performance
+  An element's back face is a mirror image of its front face. 
+  Though invisible in 2D, the back face can become visible when a transformation causes the element to be rotated in 3D space. 
+*/
+
+p {
+  backface-visibility: visible;
+  backface-visibility: hidden;
+}

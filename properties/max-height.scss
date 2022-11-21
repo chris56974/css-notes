@@ -1,0 +1,8 @@
+/*
+  max-height prevents the element from growing any taller than what's given
+  It overrides the height property.
+*/
+
+p {
+  max-height: 10vh;
+}

@@ -1,0 +1,4 @@
+p {
+  // always takes the smallest value
+  height: min(30vh, 10rem); // gives it a lower limit
+}

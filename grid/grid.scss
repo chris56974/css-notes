@@ -1,0 +1,38 @@
+/*
+  The properties below define the explicit grid. 
+  The implicit grid is used whenever there are more grid items than there are grid cells available (as defined by our explicit grid).
+*/
+
+p {
+  display: grid; // block element
+
+  row-gap: 1em;
+  column-gap: 1em;
+  gap: 1em; // row-gap: 1em; column-gap: 1em;
+
+  // How TALL rows?
+  grid-template-rows: 70% 30%; // 1st row is 70% tall, 2nd row is 30% tall
+  grid-template-rows: [you-can] 70% [name-the lines-too] 30%;
+  grid-template-rows: 1fr 1fr 1fr; // split rows into 3 fractional units
+  grid-template-rows: repeat(3, 1fr); // ibid
+
+  grid-template-rows: fit-content; // make each row as tall as the content
+  grid-template-rows: fit-content(40%); // each row 40% content-height
+
+  // fill the container, min 100px wide max 1fr
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+
+  // How WIDE columns?
+  grid-template-columns: 70% 30%; // 1st col is 70% wide, 2nd col is 30% wide
+  grid-template-columns: [you-can] 70% [name-the lines-too] 30%;
+  grid-template-columns: 1fr 1fr 1fr; // split cols into 3 fractional units
+  grid-template-columns: repeat(3, 1fr); // ibid
+
+  grid-template-columns: fit-content; // make each col as wide as the content
+  grid-template-columns: fit-content(40%); // each col 40% content-width
+
+  // fill the container, min 100px wide max 1fr
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  // How WIDE columns? (same options)
+  grid-template-columns: none/inherit/initial/unset;
+}

@@ -1,0 +1,25 @@
+// The flex property sets how a flex item will grow or shrink to fit the space available in its container.
+
+p {
+  // The order of this flex item
+  order: 0;
+
+  // flex: initial/auto/none; are all sized according to their width/height
+  flex: initial; // Shrinks to fit its container, but doesn't grow to fill up extra space. flex: 0 1 auto;
+  flex: auto; // Shrinks to fit its container, AND grows to fill up extra space. flex: 1 1 auto;
+  flex: none; // It doesn't shrink or grow. flex: 0 0 auto;
+
+  flex: 0 1 auto; // default
+  flex: 1; // flex-grow: 1, flex-shrink/basis: 0
+  flex: 1 100px; // flex-grow: 1, flex-basis: 100px, flex-shrink: 0
+  flex: flex-grow flex-shrink flex-basis;
+  flex-grow: 0; // higher = grows more
+  flex-shrink: 1; // higher = shrinks more
+  flex-basis: 0 / auto/20%/1rem; // default size before growing/shrinking
+
+  align-self: auto; // align this one item in a different spot
+  align-self: auto; // or flex-start | flex-end | center | baseline | stretch;
+
+  // There is no justify-self: end;
+  // you have to use margin-right: auto; on the preceding element
+}

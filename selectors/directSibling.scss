@@ -1,0 +1,13 @@
+// selects the FIRST adjacent p after every div
+div + p {
+  opacity: 0;
+} 
+
+/*
+
+<p>fails</p>
+<div></div>
+<p>works</p>
+<p>fails</p>
+
+*/

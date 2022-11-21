@@ -1,0 +1,11 @@
+/*
+  Setting the opacity will apply transparency to the whole element including its content 
+  Setting the alpha on the RGBA background-color will only affect the background color.
+
+  opacity only creates a stacking context when you have any other value than 1. 
+  z-index only creates a stacking context when you have overlapping positions (relative and absolute).
+*/
+
+p {
+  opacity: 0; // still takes space in the layout and still keyboard accessible
+}

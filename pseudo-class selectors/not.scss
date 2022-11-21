@@ -1,0 +1,11 @@
+// The "negation pseudo class" grabs all elements that DON'T have a selector
+
+// grab every p tag that does not have the class .green
+p:not(.green) {
+  opacity: 0;
+} 
+
+// grab elements that are not p elements
+body :not(p) {
+  opacity: 0;
+}

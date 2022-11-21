@@ -1,0 +1,36 @@
+// The cascade resolves conflicts between CSS rules.
+// It sorts by importance -> specificity -> source order (last one wins).
+
+.button {
+  color: blue !important; // wins everytime
+}
+
+// inline styles are the most specific
+// followed by IDs
+// followed by classes, pseudo-classes, attributes
+// followed by elements, pseudo-elements
+
+// (0, 0, 0, 1)
+a {
+  opacity: 0;
+}
+
+// (0, 0, 1, 0)
+.a {
+  opacity: 0;
+}
+
+// (0, 0, 1, 1)
+.a p {
+  opacity: 0;
+}
+
+// (0, 1, 2, 2)
+nav#nav p.a .b {
+  opacity: 0;
+}
+
+// (0, 1, 2, 1)
+#nav a.button:hover {
+  opacity: 0;
+}

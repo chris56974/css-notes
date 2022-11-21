@@ -1,0 +1,10 @@
+/*
+  ::before creates an inline pseudo-element that is the first child of the selected element. 
+
+  It's often seen with the content property
+  you can't hover it
+*/
+
+p::before {
+  content: "something";
+}

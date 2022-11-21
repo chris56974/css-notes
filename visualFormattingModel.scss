@@ -1,0 +1,14 @@
+/*
+
+HTML is loaded and parsed which loads CSS. 
+The parsed HTML gives us the DOM and the parsed CSS (through cascade and value processing) gives us the CSSOM. 
+The DOM + CSSOM give us the Render tree which then gets passed into the VFM "Visual Formatting Model". 
+
+
+The visual formatting model determines...
+1. Dimensions of boxes (content height/width, padding, border, margin) 
+2. Box display types (block, inline, inline-block) 
+3. Positioning scheme (static, relative, floats) 
+4. Stacking contexts (z-index, opacity, transform, filter)
+
+*/

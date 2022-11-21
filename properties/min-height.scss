@@ -1,0 +1,8 @@
+/*
+  min-height prevents the element from shrinking any smaller than what's given
+  It overrides the height property.
+*/
+
+p {
+  min-height: 10vh;
+}

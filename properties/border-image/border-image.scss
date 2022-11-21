@@ -1,0 +1,9 @@
+It needs a couple things before you can see anything. 
+
+```scss
+border-image: image image-slice;
+border-image: linear-gradient();
+border-width: 2px;   
+border-style: solid;   // this will have 4 squares at the side of your element
+border-image-slice: 1; // this will make it look like a real border
+```

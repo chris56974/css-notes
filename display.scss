@@ -1,0 +1,14 @@
+/*
+  They inherit their parent's width and the content's height. 
+  Inline elements (span, strong, img, a, code) inherit the content's width and height. 
+  They don't create any line breaks. The properties width, height, margin/padding top/bottom, don't do anything. 
+  Inline-block elements (button) inherit the content's width and height (inline) and don't create line breaks (inline). 
+  width, height, margin/padding top/bottom now work (block).
+*/
+
+p {
+  display: none; // removed from the layout, as if it no longer exists
+  display: block;
+  display: inline;
+  display: inline-block;
+}

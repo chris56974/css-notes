@@ -1,0 +1,23 @@
+p {
+  // How WIDE do you want the implicit columns?
+  grid-auto-columns: 100px;
+  grid-auto-columns: min-content;
+  grid-auto-columns: max-content;
+
+  // How TALL do you want the implicit rows?
+  grid-auto-rows: auto;
+  grid-auto-rows: minmax(100px, auto); // at least 100px, and can grow
+}
+
+p {
+  // grid-auto-flow: ; controls the auto-placement algorithm.
+
+  // ltr and then top to bottom
+  grid-auto-flow: row;
+
+  // if there's leftover space in each row, fill it with any item that fits
+  grid-auto-flow: row dense;
+
+  // top to bottom and then ltr
+  grid-auto-flow: col;
+}

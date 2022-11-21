@@ -1,0 +1,8 @@
+// If you want to center an image in a parent element, this will place the image 50% from the left of its parent. However, it won't be centered. The beginning of the image will begin right at the 50% mark. So to center the image you have to move it back by half its own width.
+
+img {
+	position: absolute;
+	left: 50%;
+	width: 25px;
+	transform: translateX(-50%);
+}

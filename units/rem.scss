@@ -1,0 +1,15 @@
+/*
+  REM units aren't responsive! Changing the viewport has no effect on their computed value
+  They're relative to the user's font-size preference in their browser's settings
+
+  Make sure your app can accomodate for larger/smaller font-sizes if you use rem (scrollbars)
+*/
+
+html {
+  font-size: 16px; // default
+}
+
+p {
+  font-size: 3rem; // 3x the root font-size 
+  width: 3rem;     // 3x the root font-size
+}

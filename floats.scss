@@ -1,0 +1,28 @@
+/* 
+  float removes an element from normal flow and pushes it to the far left/right/none as much as possible
+  It will keep going until it reaches the end of its container or another float element
+  Other inline elements and text will wrap around floated elements (can float an image for a cool effect). 
+  
+  Containers will not adjust their height for floated elements! 
+  They only adjust their height to fill normal flow content. 
+  You can use a clearfix to fix this, which will fully expand a container to proper height to enclose its floating children. 
+*/
+
+p {
+	float: left/right/none;
+}
+
+.clearfix:after {
+   content: " "; /* We add a space for old browsers */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/* @mixin clearfix { */
+.clearfix:after { /* &::after { */
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,14 @@
+/*
+  Logical properties give you the ability to control layout through logical mappings, 
+  rather than physical, direction and dimension mappings. It's only relevant if you 
+  want to support multiple languages.
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties
+  https://css-tricks.com/css-logical-properties-and-values/
+*/
+
+// <p dir="rtl" /> 
+
+p {
+  text-align: end; // puts arabic in the beginning of the page but reads rtl
+}

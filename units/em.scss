@@ -1,0 +1,38 @@
+/*
+  em units are relative to the parent element OR the current element's font size (see the code below)
+
+  It's used for margin and padding, but sometimes rem is better to promote reusability 
+  The component could be used in a variety of contexts (the parent could have different font-sizes)
+
+  It should be used for media queries until rem has more support
+
+  elements with position: absolute will use the first non-static element for their "parent" (usually root)
+*/
+
+p {
+  font-size: 3em; // 3x the parent's font-size
+  width: 3em; // 3x the current element's font-size
+}
+
+
+// They have a "compounding" effect when you use them throughout the DOM hierarchy
+// If you want components to be reusable, you have to make sure to put font-size on the DEEPEST child element
+
+// DO THIS
+.Component-heading {
+  font-size: 1.2em;
+}
+.Component-body {
+  font-size: 0.9em;
+}
+
+// NOT THIS
+.Component {
+  font-size: 1.2em;
+}
+.Component-heading {
+  font-size: 1em;
+}
+.Component-body {
+  font-size: 0.75em;
+}

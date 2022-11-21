@@ -1,0 +1,11 @@
+// This lets you add numbers in CSS.
+
+p {
+  content: "foo is " counter(foo); // use the counter
+
+  counter-increment: foo;   // increment it by one for every p element
+  counter-increment: foo 2; // ibid but by 2 
+
+  counter-reset: foo;
+  counter-reset: foo 1 bar 2; // set starting values
+}

@@ -1,0 +1,19 @@
+// The exact same thing as before except...
+
+// block only applies to the block axis (top and bottom)
+// start only applies to the top
+// end only applies to the bottom
+
+p {
+  border-block: dashed red; // border
+  border-block-color: red; // border-color
+  border-block-style: dotted; // border-style
+  border-block-width: 20px; // border-width
+
+  // same thing for start/end
+  // border-block-end: ;
+  // border-block-start: ;
+
+  // ibid
+  // border-inline: ;
+}

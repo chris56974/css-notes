@@ -1,0 +1,14 @@
+// select ALL p's INSIDE a div
+div p  { 
+  visibility: none;
+}
+
+/*
+<div> // when selecting direct p's ...
+  <p>works</p>
+  <span>
+    <p>works</p> 
+  </span>
+  <p>works</p>
+</div>
+*/

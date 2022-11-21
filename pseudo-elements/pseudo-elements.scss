@@ -1,0 +1,9 @@
+/*
+  They don't appear before/after the element you attach them to, they appear before/after the element's content (inside the element itself!). 
+  If an element can't have any content (input tags), then it can't have pseudo-elements! Each element can only have one after/before pseudo-element. 
+  They're inline by default.
+*/
+
+p::after {
+  content: "something";
+}

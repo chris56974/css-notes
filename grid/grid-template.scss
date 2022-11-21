@@ -1,0 +1,30 @@
+// You can only specify the explicit grid or the implicit grid with this shorthand.
+// The "auto-flow" is an actual keyword, you can put it in two different places.
+
+p {
+  grid: [grid-template]; // grid-template-rows / grid-template-columns;
+
+  // grid-auto-flow: col;
+  grid: grid-template-rows / [auto-flow] [dense] [grid-auto-columns];
+
+  // grid-auto-flow: row;
+  grid: [auto-flow] [dense] [grid-auto-rows] / grid-template-columns;
+
+  // grid-auto-rows & grid-auto-columns will default to auto
+
+  grid-template: grid-template-rows / grid-template-columns;
+
+  // grid-template is short for grid-template-columns, grid-template-rows and grid-template-areas. 
+  // You can't use this to specify the implicit grid properties.
+  grid-template:
+    [row1-start] "header" "header" "header" 25px [row1-end] // this row is 25px tall
+    [row2-start] "footer" "footer" "footer" 25px [row2-end]
+    / auto 50px auto;
+
+  // As this...
+  grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end];
+  grid-template-columns: auto 50px auto;
+  grid-template-areas:
+    "header header header"
+    "footer footer footer";
+}

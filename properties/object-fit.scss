@@ -1,0 +1,13 @@
+/*
+  object-fit sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.
+
+  You can alter the alignment of the replaced element's content object within the element's box using the object-position property.
+*/
+
+p {
+  object-fit: fill;
+  object-fit: contain;
+  object-fit: cover;
+  object-fit: none;
+  object-fit: scale-down;
+}

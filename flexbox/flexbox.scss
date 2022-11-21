@@ -1,0 +1,28 @@
+// Best for single columns/rows.
+
+p {
+  display: flex;
+
+  // How to position items on the main axis and their direction
+  flex-direction: row;
+  flex-direction: row/row-reverse/column/column-reverse;
+
+  // Should items wrap onto the next line?
+  flex-wrap: nowrap;
+  flex-wrap: nowrap/wrap/wrap-reverse;
+
+  // Shorthand
+  flex-flow: flex-direction flex-wrap;
+
+  // Where should space go BETWEEN items on the main axis?
+  justify-content: flex-start; // default
+  justify-content: start/center/end/flex-start/flex-end/space-between/space-around/space-evenly;
+
+  // Where should space go BETWEEN LINES on the cross axis?
+  align-content: stretch; // default
+  align-content: flex-start; // or flex-end / center / stretch / space-between / space-around
+
+  // For items on the same line, where should items go on the cross axis?
+  align-items: stretch; // default
+  align-items: flex-start/flex-end/center/stretch/baseline;
+}

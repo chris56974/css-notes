@@ -1,0 +1,5 @@
+p {
+background-origin: border-box; // at the start of the border
+background-origin: padding-box; // inside the border itself
+background-origin: content-box; // inside the padding itself
+}

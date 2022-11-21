@@ -1,0 +1,4 @@
+// selects ALL anchor tags with the target attribute set to _blank
+a[target="_blank"] {
+  opacity: 0;
+}

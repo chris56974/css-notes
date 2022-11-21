@@ -1,0 +1,12 @@
+// These are the things you can do to animate 
+
+p {
+transform: rotate(90deg);
+transform: rotate(90deg) scale(2,2); // TWO AT ONCE
+transform: translate(100px, 100px);   // from normal flow
+  
+// Sets the origins for an element's transformations
+transform-origin: 0 0;  // scale from top left
+transform-origin: left; // scale from left
+
+}

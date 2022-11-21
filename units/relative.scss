@@ -1,0 +1,10 @@
+/*
+  Relative units are relative to some fixed value.
+
+  https://gist.github.com/basham/2175a16ab7c60ce8e001
+*/
+
+p {
+  font-size: 10%; // 10% parent's font-size
+  width: 10%; // 10% parent's length
+}

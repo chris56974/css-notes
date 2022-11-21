@@ -1,0 +1,13 @@
+/*
+  text-align sets the "horizontal alignment" of the inline-level content inside a block element or table-cell box. 
+  This means it works like vertical-align but in the horizontal direction.
+
+  |text-align: start      |
+  |        text-align: end|
+  |  text-align: center   |
+  |text-a l i g n: justify|
+*/
+
+p {
+  text-align: start;
+}

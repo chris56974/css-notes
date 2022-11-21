@@ -1,0 +1,4 @@
+p {
+  // always takes the higher value
+  width: max(30vh, 10rem); // gives it an upper limit
+}

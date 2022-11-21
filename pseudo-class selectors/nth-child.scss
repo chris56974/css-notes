@@ -1,0 +1,11 @@
+// selects elements based on their position among a group of siblings.
+
+// select every 2nd p that shows up as a child in any element
+p:nth-child(2) {
+  opacity: 0;
+}
+
+// select every 2/4/6/8... p that shows up as a child in any element
+p:nth-child(2n) {
+  opacity: 0; 
+}

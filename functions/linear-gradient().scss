@@ -1,0 +1,37 @@
+/*
+  linear-gradient() creates an image, NOT A COLOR
+  so you can't use it for color, font-color, or border-color
+*/
+
+div {
+  background: linear-gradient(blue, red); // blue top red bottom
+  background: linear-gradient(0deg, blue, red);  // blue bottom, red top
+  background: linear-gradient(45deg, blue, red); // ibid but tilted 45 deg clockwise
+  background: linear-gradient(to top left, blue, red); // bottom right to top left
+  background: linear-gradient(0deg, blue, green 40%, red) // bottom blue then @ 40% turns green, top red
+}
+
+/*
+
+<linear-gradient()> = 
+  linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )  
+
+<side-or-corner> = 
+  [ left | right ]  ||
+  [ top | bottom ]  
+
+<color-stop-list> = 
+  <linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#  
+
+<linear-color-stop> = 
+  <color>               &&
+  <length-percentage>?  
+
+<linear-color-hint> = 
+  <length-percentage>  
+
+<length-percentage> = 
+  <length>      |
+  <percentage>  
+
+*/

@@ -1,0 +1,14 @@
+/*
+	Visibility shows/hides something without changing the layout of a document
+	It doesn't effect any child elements
+
+											 collapse  events  taborder
+	opacity: 0              No         Yes     Yes
+	visibility: hidden      No         No      No
+	visibility: collapse    tb only    No      No
+	display: none           Yes        No      No
+*/
+
+p {
+	visibility: hidden;
+}

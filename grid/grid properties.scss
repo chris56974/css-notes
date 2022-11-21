@@ -1,0 +1,19 @@
+// Grid-properties are about how to position grid items inside their grid cells
+p {
+  // row-axis (inline-axis)
+  justify-items: start; // center/end/stretch;
+
+  // col-axis (block-axis)
+  align-items: start; // center/end/stretch;
+
+  // shorthand
+  place-items: start end; // align-items justify-items;
+  place-items: center;    // centers a div
+
+  // If the entire grid is smaller than its container, where should I place the grid should I place it?
+  justify-content: start;
+  align-content: center;
+
+  // shorthand
+  place-content: align-content / justify-content; // shorthand
+}

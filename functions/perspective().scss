@@ -1,0 +1,10 @@
+/*
+  perspective() defines a transformation that sets the distance between the user and the z=0 plane.
+  The perspective refers to where the viewer would be if the 2-dimensional interface were 3-dimensional. 
+  Its result is a <transform-function> data type.
+
+  It determines the distance between the z=0 plane and the user in order to give a 3D positioned element some perspective.
+
+  The perspective() transform function is part of the transform value applied on the element being transformed. 
+  This differs from the perspective and perspective-origin properties which are attached to the parent of a child transformed in 3-dimensional space.
+*/

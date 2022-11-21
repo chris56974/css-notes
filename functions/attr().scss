@@ -1,0 +1,7 @@
+// Grab the data-attributes from HTML
+
+// <p data-example="red" />
+
+p {
+	color: attr(data-example);
+}
